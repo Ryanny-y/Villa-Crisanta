@@ -4,6 +4,9 @@ const photoGallery = new Swiper('.photo-gallery-swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    renderBullet: function (index, className) {
+      return '<div class="' + className + '"><img src="../images/landing-page/villa-' + (index + 1) + '.jpg"></div>';
+    },
     
   },
 

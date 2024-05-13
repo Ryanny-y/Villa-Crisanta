@@ -65,10 +65,18 @@ input, button, textarea, select {
 }
 
 /* CUSTOM PAGINATION */
-.custom-pagination-bullet {
-  height: 50px;
-  width: 50px;
+.swiper-pagination-bullet{
+  height: 100px !important;
+  width: 100px !important;
   margin: 0 5px;
-  border-radius: 50%;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.swiper-pagination-bullet img{
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 5px;
+  border-radius: 0 !important;
   background-size: cover;
 }
