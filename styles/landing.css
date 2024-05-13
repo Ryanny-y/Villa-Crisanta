@@ -63,3 +63,12 @@ input, button, textarea, select {
   left: 0;
   right: 0;
 }
+
+/* CUSTOM PAGINATION */
+.custom-pagination-bullet {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-size: cover;
+}
