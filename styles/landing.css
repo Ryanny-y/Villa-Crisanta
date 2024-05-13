@@ -1,0 +1,75 @@
+@import url('https://fonts.cdnfonts.com/css/tt-commons');
+
+/* GENERAL STyLES */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100svh;
+  line-height: 1.5;
+  font-family: 'TT Commons', sans-serif;
+ 
+}
+
+body, h1, h2, h3, h4, h5, p, figure, blockquote {
+  margin: 0;
+  letter-spacing: .025em;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: transparent;
+  border-top: 100px solid #d6dee1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, picture, svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* UTILITY CLASS */
+.container {
+  --max-width: 1280px;
+  --padding: 1rem;
+
+  max-width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
+/* START HERO SECTION */
+#hero::after{
+  content: '';
+  background: url('../images/landing-page/Hero-bg.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(70%);
+  z-index: -10;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+}
