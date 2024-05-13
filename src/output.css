@@ -652,8 +652,28 @@ video {
   right: 2rem;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .mx-auto {
@@ -727,6 +747,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -910,6 +934,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -940,6 +968,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .whitespace-nowrap {
@@ -996,6 +1028,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1021,6 +1057,16 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1029,12 +1075,24 @@ video {
   padding-left: 0.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-start {
   text-align: start;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .text-2xl {
@@ -1107,6 +1165,11 @@ video {
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
 
+.text-gold-1 {
+  --tw-text-opacity: 1;
+  color: rgb(221 150 3 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1142,6 +1205,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .hover\:text-gold-1:hover {
@@ -1192,6 +1259,11 @@ video {
     line-height: 2.25rem;
   }
 
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:leading-snug {
     line-height: 1.375;
   }
@@ -1238,6 +1310,10 @@ video {
     width: 13rem;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:grow-0 {
     flex-grow: 0;
   }
@@ -1258,12 +1334,20 @@ video {
     flex-direction: row-reverse;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:gap-5 {
     gap: 1.25rem;
   }
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:text-4xl {
@@ -1276,5 +1360,31 @@ video {
     line-height: 1;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:leading-tight {
-    line-height: 1
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
+  .lg\:grow-0 {
+    flex-grow: 0;
+  }
+}

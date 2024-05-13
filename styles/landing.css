@@ -60,6 +60,32 @@ input, button, textarea, select {
   background: #202020;
 }
 
+.custom-loader {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  padding:3px;
+  background: 
+    radial-gradient(farthest-side,#766DF4 95%,#0000) 50% 0/12px 12px no-repeat,
+    radial-gradient(farthest-side,#0000 calc(100% - 5px),#766DF4 calc(100% - 4px)) content-box;
+  animation:s6 2s infinite ;
+}
+@keyframes s6 {to{transform: rotate(1turn)}}
+
+.loader h1 {
+  animation: loaderText .7s infinite;
+}
+
+@keyframes loaderText {
+  0% {
+    color: #202020;
+  } 50% {
+    color: #DD9603;
+  } 100% {
+    color: #202020;
+  }
+}
+
 /* START HERO SECTION */
 #hero::after{
   content: '';
@@ -97,6 +123,16 @@ input, button, textarea, select {
   border: 1px solid #202020;
   border-radius: 4px;
   z-index: -1;
+}
+
+@media (max-width: 500px) {
+  .about-us .image-1::after, .about-us .image-3::after {
+    right: 0;
+  }
+  
+  .about-us .image-2::after {
+    left: 0;
+  }
 }
 
 

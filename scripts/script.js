@@ -1,22 +1,19 @@
-const photoGallery = new Swiper('.photo-gallery-swiper', {
-  
-  autoplay: {
-    delay: 2000,
-  },
+import { hamburger, headerBgTransition } from "./utils/handleTransitions.js";
+import { photoGallery } from "./utils/swiper.js";
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<div class="' + className + '"><img src="../images/landing-page/slider/slider-' + (index + 1) + '.jpg"></div>';
-    },
-    
-  },
+// window event
+window.addEventListener('scroll', headerBgTransition);
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-  },
+// hamburger menu
+hamburger();
+
+// SWIPERS
+photoGallery;
+
+
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".loader").style.display = "none";
+  }, 3000);
 });
