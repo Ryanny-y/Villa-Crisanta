@@ -17,21 +17,21 @@
   <!-- HEADER -->
   <header id="header" class="fixed bg-transparent right-0 left-0 top-0 py-2">
     <div class="container">
-      <div class="header flex items-center justify-between text-white-1">
+      <div class="header flex items-center justify-between text-white-1 gap-2">
         <div class="title flex items-center gap-3">
           <img src="images/vclogo.png" alt="" class="h-10 sm:h-12">
-          <a href="index.html" class="font-semibold text-2xl sm:text-3xl md:text-4xl">Villa Crisanta Spring Resort</a>
+          <a href="index.html" class="font-semibold text-2xl sm:text-3xl md:text-4xl hover:text-gold-1 transition-all duration-500">Villa Crisanta Spring Resort</a>
         </div>
 
-        <div class="hamburger-menu text-white-1 text-lg">
-
+        <div class="hamburger-menu flex items-center text-white-1 text-xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
         </div>
 
-        <nav class="header-nav flex fixed bg-black-1 top-0 bottom-0 p-3 right-0 left-1/2 md:static md:bg-transparent">
-          <ul class="flex flex-col md:static md:flex-row items-center gap-5 font-semibold text-lg">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SECTION</a></li>
+        <nav class="header-nav flex fixed bg-black-1 top-0 bottom-0 p-3 right-0 left-full md:static md:bg-transparent">
+          <ul class="flex flex-col md:static md:flex-row items-center gap-5 font-semibold text-lg ">
+            <li><a href="" class="hover:text-gold-1 transition-all duration-500">HOME</a></li>
+            <li><a href="" class="hover:text-gold-1 transition-all duration-500">ABOUT</a></li>
+            <li><a href="" class="hover:text-gold-1 transition-all duration-500">SECTION</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +39,7 @@
   </header>
   
   <!-- MAIN -->
-  <main id="main">
+  <main id="main" class="flex flex-col gap-20 pb-16">
     <!-- HERO -->
     <section id="hero" class="relative w-full" style="z-index: -1;">
       <div class="container">
@@ -51,15 +51,83 @@
     </section>
 
     <!-- VILLAS -->
-    <section id="villas" class="[x]">
+    <section id="villas">
       <div class="container">
-        <div class="villas">
-          
+        <div class="villas text-center flex flex-col gap-14">
+          <h1 class="title text-5xl text-black-1 underline font-semibold">Choose Between Our Two Cozy Villas!</h1>
+
+          <div class="villas-container flex justify-between items-center gap-10 md:w-4/5 mx-auto" style="height: 500px;">
+            <div class="villa-1 relative h-full p-7 shadow-md bg-black-1">
+              <img src="images/landing-page/villa-1.jpg" alt="" class="h-full brightness-75">
+              <div class="text-container absolute bg-white-1 bottom-10 right-12 left-12 text-start py-3 px-3">
+                <p class="font-bold text-black-1 text-xl mb-3 leading-tight">VILLA CRISANTA 1 <br> SPRING RESORT</p>
+                <a href="https://www.google.com/maps/place/Villa+Crisanta+2+Spring+Resort/@14.1778211,121.2050342,17z/data=!3m1!4b1!4m10!3m9!1s0x33bd61869d4f284b:0x1268211129dd2a9f!5m3!1s2024-02-03!4m1!1i2!8m2!3d14.1778159!4d121.2076091!16s%2Fg%2F11h1hzdtsq?entry=ttu" class="underline italic font-semibold">Blk 26, Lot 8, Geneva Lake St., Phase 2, Lakewood Subd., Brgy. Tadlac, 4030 Los Baños Laguna</a>
+              </div>
+            </div>
+
+            <div class="villa-1 relative h-full p-7 shadow-md bg-black-1">
+              <img src="images/landing-page/villa-2.jpg" alt="" class="h-full brightness-75">
+              <div class="text-container absolute bg-white-1 bottom-10 right-12 left-12 text-start py-3 px-3">
+                <p class="font-bold text-black-1 text-xl mb-3 leading-tight">VILLA CRISANTA 2 <br> SPRING RESORT</p>
+                <a href="https://www.google.com/maps/place/Villa+Crisanta+2+Spring+Resort/@14.1778211,121.2050342,17z/data=!3m1!4b1!4m10!3m9!1s0x33bd61869d4f284b:0x1268211129dd2a9f!5m3!1s2024-02-03!4m1!1i2!8m2!3d14.1778159!4d121.2076091!16s%2Fg%2F11h1hzdtsq?entry=ttu" class="underline italic font-semibold" >Blk 26, Lot 10, Barcroft Lake St., Phase 2, Lakewood Executive Subd., Brgy. Tadlac, 4030 Los Baños Laguna</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ABOUT US -->
+    <section id="about-us">
+      <div class="container">
+        <div class="about-us flex flex-col gap-10">
+          <h1 class="font-bold text-black-1 text-center text-5xl mb-10">About Us</h1>
+
+          <div class="dining flex flex-row justify-center items-center gap-5 text-black-1">
+            <div class="image h-80 basis-1/3 flex-grow relative">
+              <img src="images/landing-page/Hero-bg.jpg" alt="" class="h-full w-full">
+            </div>
+
+            <div class="text basis-7/12 text-center">
+              <h2 class="text-4xl font-bold mb-5">DINING</h2>
+              <p class="w-4/5 mx-auto text-base">Enjoy a continental breakfast of pastries, cereal, and a variety of hot drinks. The lounge is available for guests to relax with a book, tea and coffee and a variety of snacks.</p>
+            </div>
+          </div>
+
+          <div class="dining flex flex-row-reverse justify-center items-center gap-5 text-black-1">
+            <div class="image h-80 basis-1/3 flex-grow relative">
+              <img src="images/landing-page/Hero-bg.jpg" alt="" class="h-full w-full">
+            </div>
+
+            <div class="text basis-7/12 text-center">
+              <h2 class="text-4xl font-bold mb-5">AMENITIES</h2>
+              <p class="w-4/5 mx-auto text-base">We offer a variety of amenities to make your stay with us as comfortable as possible. Billiard is available with the option of pay-per-hours / day. We provide complimentary high-speed internet access.</p>
+            </div>
+          </div>
+
+          <div class="dining flex flex-row justify-center items-center gap-5 text-black-1">
+            <div class="image h-80 basis-1/3 flex-grow relative">
+              <img src="images/landing-page/Hero-bg.jpg" alt="" class="h-full w-full">
+            </div>
+
+            <div class="text basis-7/12 text-center">
+              <h2 class="text-4xl font-bold mb-5">100% Satisfaction Guaranteed</h2>
+              <p class="w-4/5 mx-auto text-base">Whether this is your first visit, or you have been a guest many times, we want your experience to be excellent. Our staff is always available to help with any questions or concerns you may have.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-
+    <!-- PHOTO GALLERY -->
+    <section id="photo-gallery">
+      <div class="container">
+        <div class="photo-gallery">
+          
+        </div>
+      </div>
+    </section>
 
   </main>
 
