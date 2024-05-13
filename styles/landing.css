@@ -100,6 +100,16 @@ input, button, textarea, select {
 }
 
 
+/* CONTACT */
+.drop-down-hours .open-days{
+  display: none;
+}
+
+.drop-down-hours:hover .open-days{
+  display: block;
+}
+
+
 /* SWIPER */
 .swiper-pagination {
   position: static !important;
