@@ -50,6 +50,16 @@ input, button, textarea, select {
   margin-inline: auto;
 }
 
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  right: -20px;
+  height: 4px;
+  background: #202020;
+}
+
 /* START HERO SECTION */
 #hero::after{
   content: '';
@@ -64,13 +74,47 @@ input, button, textarea, select {
   right: 0;
 }
 
-/* CUSTOM PAGINATION */
+/* ABOUT US */
+.about-us .image-1::after, .about-us .image-3::after {
+  position: absolute;
+  content: '';
+  right: -25px;
+  width: 100%;
+  bottom: -25px;
+  height: 100%;
+  border: 1px solid #202020;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.about-us .image-2::after {
+  position: absolute;
+  content: '';
+  left: -25px;
+  width: 100%;
+  bottom: -25px;
+  height: 100%;
+  border: 1px solid #202020;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+
+/* SWIPER */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 10px;
+}
+
 .swiper-pagination-bullet{
-  height: 100px !important;
-  width: 100px !important;
+  height: 50px !important;
+  width: 50px !important;
   margin: 0 5px;
-  border-radius: 0 !important;
   background: transparent !important;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  opacity: .6 !important;
 }
 
 .swiper-pagination-bullet img{
@@ -79,4 +123,11 @@ input, button, textarea, select {
   margin: 0 5px;
   border-radius: 0 !important;
   background-size: cover;
+}
+
+.swiper-next, .swiper-prev {
+  position: absolute;
+  /* top: 0; */
+  font-size: 2rem;
+  z-index: 2;
 }
