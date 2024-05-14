@@ -4,13 +4,11 @@ export const hamburger = () => {
   const headerNav = document.querySelector('.header-nav');
 
   hamburgerMenu.addEventListener('click', () => {
-    headerNav.classList.toggle('left-full');
-    headerNav.classList.toggle('left-1/2');
+    headerNav.classList.toggle('active');
   });
 
   xMark.addEventListener('click', () => {
-    headerNav.classList.toggle('left-full');
-    headerNav.classList.toggle('left-1/2');
+    headerNav.classList.toggle('active');
   });
   
 };

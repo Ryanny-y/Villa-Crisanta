@@ -12,7 +12,10 @@ body {
   min-height: 100svh;
   line-height: 1.5;
   font-family: 'TT Commons', sans-serif;
- 
+}
+
+body, html {
+  scroll-behavior: smooth;
 }
 
 body, h1, h2, h3, h4, h5, p, figure, blockquote {
@@ -61,19 +64,22 @@ input, button, textarea, select {
 }
 
 .custom-loader {
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  padding:3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   background: 
-    radial-gradient(farthest-side,#766DF4 95%,#0000) 50% 0/12px 12px no-repeat,
-    radial-gradient(farthest-side,#0000 calc(100% - 5px),#766DF4 calc(100% - 4px)) content-box;
-  animation:s6 2s infinite ;
+    radial-gradient(farthest-side,#DD9603 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#DD9603);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
 }
-@keyframes s6 {to{transform: rotate(1turn)}}
+
+@keyframes s3{ 
+  100%{transform: rotate(1turn)}
+}
 
 .loader h1 {
-  animation: loaderText .7s infinite;
+  animation: loaderText .8s infinite;
 }
 
 @keyframes loaderText {
@@ -84,6 +90,16 @@ input, button, textarea, select {
   } 100% {
     color: #202020;
   }
+}
+
+/* HEADER NAV */
+.header-nav {
+  left: 100%;
+  transition: all .3s ease;
+}
+
+.header-nav.active {
+  left: 50%;
 }
 
 /* START HERO SECTION */
@@ -99,6 +115,27 @@ input, button, textarea, select {
   left: 0;
   right: 0;
 }
+
+/* VILLAS */
+.villa-1, .villa-2 {
+  transition: box-shadow .3s ease;
+  animation: villaFloat 2s infinite;
+}
+
+.villa-1:hover, .villa-2:hover {
+  box-shadow: 0 0 40px 10px #DD9603;
+}
+
+@keyframes villaFloat{
+  0% {
+    transform: translateY(-20px);
+  } 50% {
+    transform: translateY(0);
+  } 100% {
+    transform: translateY(-20px);
+  }
+}
+
 
 /* ABOUT US */
 .about-us .image-1::after, .about-us .image-3::after {
