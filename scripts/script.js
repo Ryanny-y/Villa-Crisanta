@@ -1,6 +1,5 @@
 import { hamburger, headerBgTransition } from "./utils/handleTransitions.js";
 import { photoGallery } from "./utils/swiper.js";
-hamburger();
 
 window.addEventListener("load", () => {
   setTimeout(() => {
@@ -11,6 +10,7 @@ window.addEventListener("load", () => {
   window.addEventListener('scroll', headerBgTransition);
 
   // hamburger menu
+  hamburger();
 
   // SWIPERS
   photoGallery;

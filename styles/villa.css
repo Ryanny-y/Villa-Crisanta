@@ -105,10 +105,10 @@ input, button, textarea, select {
 /* START HERO SECTION */
 #hero::after{
   content: '';
-  background: url('../images/landing-page/Hero-bg.jpg') no-repeat center;
+  background: url('../images/villa-1/hero-bg.jpg') no-repeat center;
   background-size: cover;
   position: absolute;
-  filter: brightness(70%);
+  filter: brightness(50%);
   z-index: -10;
   top: 0;
   height: 100vh;
@@ -116,100 +116,68 @@ input, button, textarea, select {
   right: 0;
 }
 
-/* VILLAS */
-.villa-1, .villa-2 {
-  transition: box-shadow .3s ease;
-  animation: villaFloat 2s infinite;
+/* KITCHEN */
+.kitchen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(2, 150px);
+  gap: 20px;
+  grid-template-areas:
+      'header1 long header2'
+      'footer1 long footer2'
 }
 
-.villa-1:hover, .villa-2:hover {
-  box-shadow: 0 0 40px 10px #DD9603;
-}
-
-@keyframes villaFloat{
-  0% {
-    transform: translateY(-20px);
-  } 50% {
-    transform: translateY(0);
-  } 100% {
-    transform: translateY(-20px);
-  }
-}
-
-
-/* ABOUT US */
-.about-us .image-1::after, .about-us .image-3::after {
-  position: absolute;
-  content: '';
-  right: -25px;
+.kitchen img {
   width: 100%;
-  bottom: -25px;
   height: 100%;
-  border: 1px solid #202020;
-  border-radius: 4px;
-  z-index: -1;
+  box-shadow: 0 0 2px 2px #DD9603;
+  object-fit: cover;
 }
 
-.about-us .image-2::after {
-  position: absolute;
-  content: '';
-  left: -25px;
-  width: 100%;
-  bottom: -25px;
-  height: 100%;
-  border: 1px solid #202020;
-  border-radius: 4px;
-  z-index: -1;
+.i1 {
+  grid-area: header1;
 }
 
-@media (max-width: 500px) {
-  .about-us .image-1::after, .about-us .image-3::after {
-    right: 0;
-  }
-  
-  .about-us .image-2::after {
-    left: 0;
-  }
+.i2 {
+  grid-area: header2;
+}
+
+.i3 {
+  grid-area: long;
+}
+
+.i4 {
+  grid-area: footer1;
+}
+
+.i5 {
+  grid-area: footer2;
 }
 
 
-/* CONTACT */
-.drop-down-hours .open-days{
-  display: none;
-}
-
-.drop-down-hours:hover .open-days{
-  display: block;
-}
 
 
-/* SWIPER */
-.swiper-pagination {
+
+
+
+
+/* swiper */
+.swiper-rooms {
   position: static !important;
-  margin-top: 10px;
+  padding: 5px !important;
 }
 
-.swiper-pagination-bullet{
-  height: 50px !important;
-  width: 50px !important;
-  margin: 0 5px;
-  background: transparent !important;
-}
-
-.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-  opacity: .6 !important;
-}
-
-.swiper-pagination-bullet img{
-  height: 100% !important;
-  width: 100% !important;
-  margin: 0 5px;
-  border-radius: 0 !important;
-  background-size: cover;
+.swiper-slide {
+  box-shadow: 0 0 4px 1px #707070 !important;
 }
 
 .swiper-next, .swiper-prev {
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 2;
+  color: white;
+  background: #202020;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
