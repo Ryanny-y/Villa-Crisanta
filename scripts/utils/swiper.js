@@ -9,7 +9,7 @@ export const photoGallery = new Swiper('.photo-gallery-swiper', {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<div class="' + className + '"><img src="../../images/landing-page/slider/slider-' + (index + 1) + '.jpg"></div>';
+      return '<div class="' + className + '"><img src="images/landing-page/slider/slider-' + (index + 1) + '.jpg"></div>';
     },
     
   },
