@@ -16,9 +16,8 @@ window.addEventListener("load", () => {
   const signInBtn = document.querySelector('.sign-inbtn');
   signInBtn.addEventListener('click', oauthSignIn);
 
-  function oauthSignIn(event) {
+  function oauthSignIn() {
     // Google's OAuth 2.0 endpoint for requesting an access token
-    event.preventDefault();
 
     var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
   
@@ -29,7 +28,7 @@ window.addEventListener("load", () => {
   
     // Parameters to pass to OAuth 2.0 endpoint.
     var params = {'client_id': '13411952836-3tpdg6hfrbpr3qgspqgo8kf6t9vjak1r.apps.googleusercontent.com',
-                  'redirect_uri': 'https://villacrisanta-111.netlify.app',
+                  'redirect_uri': 'https://villacrisanta-111.netlify.app/villa-1.html',
                   'response_type': 'token',
                   'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
                   'include_granted_scopes': 'true',
