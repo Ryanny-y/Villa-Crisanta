@@ -70,6 +70,17 @@ window.addEventListener("load", () => {
 
     if (info && info['access_token']) {
       signInBtn.parentElement.classList.add('hidden');
+
+      if(innerWidth > 768) {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight - 200);
+        }, 1000)
+      } else {
+        setTimeout(() => {
+          window.scrollTo(0, document.body.scrollHeight - 1100);
+        }, 1000)
+      }
+      
     } else {
       document.querySelector('.indicator').innerHTML = 'Not Signed In <br> <span class="text-sm">Please sign in to fill up the form</span>';
     }
