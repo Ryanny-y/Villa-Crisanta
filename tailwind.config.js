@@ -10,7 +10,10 @@ module.exports = {
       },
       height: {
         '5-h': '31rem',
-
+      },
+      spacing: {
+        '66': '17.5rem',
+        '68': '19rem'
       }
     },
   },
