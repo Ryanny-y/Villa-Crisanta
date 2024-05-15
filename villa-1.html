@@ -375,8 +375,8 @@
                 <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
               </div>
 
-              <form action="" class="book-form w-full flex flex-col gap-5">
-                <select name="" id="" class="px-4 py-2 outline-none" required>
+              <form action="https://script.google.com/macros/s/AKfycbx0xHpEvf2Jz2kkir4rYYvJEtf2NTd-H9F6eUhaxadsFcecTgdUVjwsGNGpb5D3E0IjEg/exec" class="book-form w-full flex flex-col gap-5" id="form">
+                <select name="selected-villa" id="" class="px-4 py-2 outline-none" required>
                   <option value="" disabled selected>Select Villa</option>
                   <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
                   <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
@@ -401,26 +401,42 @@
 
                 <div class="date-guest flex gap-3">
                   <label for="date-of-event" class="flex-1">
+                    <span class="text-white">Date of Event</span>
                     <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
                   </label>
 
                   <label for="number-of-guest" class="flex-1">
-                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests">
+                    <span class="text-white">Number of Guests</span>
+                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests (3 yrs. old and above)">
                   </label>
                 </div>
 
                 <div class="time-rooms flex gap-3">
                   <label for="time-in" class="flex-1">
+                    <span class="text-white">Time In</span>
                     <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">
                   </label>
 
                   <label for="rooms" class="flex-1">
-                    <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms">
+                    <span class="text-white">Number of Rooms:</span>
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms (1 - 8)" min="1" max="8">
                   </label>
                 </div>
 
-                <button type="submit" class="py-2 px-5 bg-gold-1 text-white-1 outline-none border-none text-lg font-semibold">Submit</button>
+                <button type="submit" class="py-2 px-5 bg-gold-1 text-white-1 outline-none border-none text-lg font-semibold" id="submit-button">Submit</button>
               </form>
+              <div id="message"
+                style="
+                display: none;
+                margin: 20px;
+                font-weight: bold;
+                color: green;
+                padding: 8px;
+                background-color: beige;
+                border-radius: 4px;
+                border-color: aquamarine;
+              "
+            ></div>
             </div>
           </div> 
         </div>
