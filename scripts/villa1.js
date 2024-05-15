@@ -12,6 +12,11 @@ window.addEventListener("load", () => {
   // hamburger menu
   hamburger();
 
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    $('#name').text(profile.getName());
+  }
+
   // SWIPERS
   roomsSwiper;
 });

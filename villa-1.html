@@ -16,6 +16,10 @@
 
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <!-- GOOGLE SIGN IN -->
+  <meta name="google-signin-client_id" content="13411952836-idlffo9c9oanuo08ct7ds0h05slb92qp.apps.googleusercontent.com">
+
 </head>
 <body class="bg-white-1">
 
@@ -44,14 +48,14 @@
         <ul class="header-nav fixed top-0 bottom-0 right-0 md:static flex flex-col md:flex-row md:items-center px-4 py-7 md:p-3 gap-5 font-semibold text-lg bg-black-1 md:bg-transparent">
           <li class="x-mark text-2xl md:hidden text-end transition-all duration-300 hover:text-gold-1"><i class="fa-solid fa-xmark"></i></li>
           <li><a href="#" class="transition-all duration-300 hover:text-gold-1">HOME</a></li>
-          <li><a href="#about-us" class="transition-all duration-300 hover:text-gold-1">ABOUT</a></li>
-          <li><a href="#contact" class="transition-all duration-300 hover:text-gold-1">CONTACT</a></li>
+          <li><a href="#space-utilize" class="transition-all duration-300 hover:text-gold-1">ABOUT</a></li>
+          <li><a href="#contact-form" class="transition-all duration-300 hover:text-gold-1">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <main id="main" class="flex flex-col gap-20 pb-16">
+  <main id="main" class="flex flex-col gap-20 ">
     <!-- HERO -->
     <section id="hero" class="relative w-full" style="z-index: -1;">
       <div class="container">
@@ -336,11 +340,62 @@
       </div>
     </section>
 
+    <!-- CONTACT AND BOOKING -->
+    <section id="contact-form" class="bg-black-1">
+      <div class="container">
+        <div class="contact-form text-white-1 py-10 flex gap-10">
+          <div class="contact-wrapper flex flex-col gap-7 basis-1/2">
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-semibold mb-3">CONTACT</h1>
+              <ul class="text-xl ml-4 flex flex-col gap-2">
+                <li>Ms. Jema Abad <br> 09087969200</li>
+                <li>Ms. Jennelyn Dumalaog <br> 09513979755</li>
+                <li>Mr. Pablio Labrador <br> 09508394289</li>
+              </ul>
+            </div>
+
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-semibold mb-3">SOCIALS</h1>
+              <ul class="text-xl ml-4 flex flex-col gap-2">
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fas fa-envelope"></i> villacrisantalaguna@gmail.com</a>
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fa-brands fa-instagram"></i> @villacrisantalaguna</a>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="g-form">
+            <h3 class="text-2xl sm:text-3xl font-semibold mb-3">BOOK NOW!</h3>
+
+              <div class="book-container w-full">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div class="data hidden">
+                  <p>Name</p>
+                  <p id="name"></p>
+                  <p>Profile Pic</p>
+                  <img src="" class="rounded-full h-14 w-14" id="image" alt="">
+                  <p>Email</p>
+                  <p id="email"></p>
+                  <button type="button" class="p-2 bg-black-1 text-white-1" onclick="SignOut()">Sign Out</button>
+                </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- SWIPER -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- JAVASCRIPT -->
   <script type="module" src="/scripts/villa1.js"></script>
+
+  <!-- GOOGLE PLATFORM -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
