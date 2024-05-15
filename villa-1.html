@@ -362,62 +362,66 @@
             </div>
           </div>
           
-          <div class="g-form grow">
+          <div class="g-form grow relative">
             <h3 class="text-2xl sm:text-3xl font-semibold mb-3">BOOK NOW!</h3>
 
-              <div class="book-container w-full text-black-1 relative">
-                <div class="sign-in-btn bg-white-1 absolute top-0 bottom-0 left-0 right-0 flex flex-col gap-2 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.8);">
-                  <div class="indicator text-lg font-semibold bg-black-1 text-center rounded-md py-2 px-5 text-white-1"></div>
-                  <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
+            <!-- <div class="absolute top-0 right-0">
+              <button class="logout-btn text-white-1 py-2 px-5 bg-gold flex items-center text-lg rounded-sm">Logout</button>
+            </div> -->
+
+            <div class="book-container w-full text-black-1 relative">
+              <div class="sign-in-btn bg-white-1 absolute top-0 bottom-0 left-0 right-0 flex flex-col gap-2 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.8);">
+                <div class="indicator text-lg font-semibold bg-black-1 text-center rounded-md py-2 px-5 text-white-1"></div>
+                <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
+              </div>
+
+              <form action="" class="book-form w-full flex flex-col gap-5">
+                <select name="" id="" class="px-4 py-2 outline-none" required>
+                  <option value="" disabled selected>Select Villa</option>
+                  <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
+                  <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
+                </select>
+
+                <label for="full-name">
+                  <input class="px-4 py-2 w-full outline-none" type="text" name="full-name" id="full-name" required placeholder="Your Name">
+                </label>
+                
+                <label for="address">
+                  <input class="px-4 py-2 w-full outline-none" type="text" name="address" id="address" required placeholder="Permanent Address">
+                </label>
+
+                <div class="contact-num flex gap-3">
+                  <label for="contact-number" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="contact-number" id="contact-number" required placeholder="Contact No#:">
+                  </label>
+                  <label for="alter-number" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="alter-number" id="alter-number" required placeholder="Alternative Contact No#:">
+                  </label>
                 </div>
 
-                <form action="" class="book-form w-full flex flex-col gap-5">
-                  <select name="" id="" class="px-4 py-2 outline-none" required>
-                    <option value="" disabled selected>Select Villa</option>
-                    <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
-                    <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
-                  </select>
-
-                  <label for="full-name">
-                    <input class="px-4 py-2 w-full outline-none" type="text" name="full-name" id="full-name" required placeholder="Your Name">
-                  </label>
-                  
-                  <label for="address">
-                    <input class="px-4 py-2 w-full outline-none" type="text" name="address" id="address" required placeholder="Permanent Address">
+                <div class="date-guest flex gap-3">
+                  <label for="date-of-event" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
                   </label>
 
-                  <div class="contact-num flex gap-3">
-                    <label for="contact-number" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none" type="number" name="contact-number" id="contact-number" required placeholder="Contact No#:">
-                    </label>
-                    <label for="alter-number" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none" type="number" name="alter-number" id="alter-number" required placeholder="Alternative Contact No#:">
-                    </label>
-                  </div>
+                  <label for="number-of-guest" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests">
+                  </label>
+                </div>
 
-                  <div class="date-guest flex gap-3">
-                    <label for="date-of-event" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
-                    </label>
+                <div class="time-rooms flex gap-3">
+                  <label for="time-in" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">
+                  </label>
 
-                    <label for="number-of-guest" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests">
-                    </label>
-                  </div>
+                  <label for="rooms" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms">
+                  </label>
+                </div>
 
-                  <div class="time-rooms flex gap-3">
-                    <label for="time-in" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">
-                    </label>
-
-                    <label for="rooms" class="flex-1">
-                      <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms">
-                    </label>
-                  </div>
-
-                  <button type="submit" class="py-2 px-5 bg-gold-1 text-white-1 outline-none border-none text-lg font-semibold">Submit</button>
-                </form>
-              </div>
+                <button type="submit" class="py-2 px-5 bg-gold-1 text-white-1 outline-none border-none text-lg font-semibold">Submit</button>
+              </form>
+            </div>
           </div> 
         </div>
       </div>

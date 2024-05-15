@@ -15,6 +15,8 @@ window.addEventListener("load", () => {
   // FORSIGN IN
   const signInBtn = document.querySelector('.sign-inbtn');
   signInBtn.addEventListener('click', oauthSignIn);
+  // const logoutBtn = document.querySelector('.logout-btn');
+  // logoutBtn.addEventListener('click', logout);
 
   function oauthSignIn() {
     // Google's OAuth 2.0 endpoint for requesting an access token
@@ -87,6 +89,15 @@ window.addEventListener("load", () => {
   }
   
   handleRequest();
+
+  function logout() {
+    // Clear OAuth information from localStorage
+    localStorage.removeItem('authInfo');
+    
+    // Redirect to Google logout URL
+    window.location.href = 'https://villacrisanta-111.netlify.app/villa-1.html';
+}
+  
 
   // SWIPERS
   roomsSwiper;
