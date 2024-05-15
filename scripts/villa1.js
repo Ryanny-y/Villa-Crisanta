@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
   
     // Parameters to pass to OAuth 2.0 endpoint.
     var params = {'client_id': '13411952836-3tpdg6hfrbpr3qgspqgo8kf6t9vjak1r.apps.googleusercontent.com',
-                  'redirect_uri': 'http://127.0.0.1:5500/villa-1.html',
+                  'redirect_uri': 'https://villacrisanta-111.netlify.app',
                   'response_type': 'token',
                   'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
                   'include_granted_scopes': 'true',
