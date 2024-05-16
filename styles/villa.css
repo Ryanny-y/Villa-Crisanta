@@ -103,9 +103,22 @@ input, button, textarea, select {
 }
 
 /* START HERO SECTION */
-#hero::after{
+#hero-1::after{
   content: '';
   background: url('../images/villa-1/hero-bg.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(50%);
+  z-index: -10;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+}
+
+#hero-2::after{
+  content: '';
+  background: url('../images/villa-2/hero-bg.jpg') no-repeat center;
   background-size: cover;
   position: absolute;
   filter: brightness(50%);

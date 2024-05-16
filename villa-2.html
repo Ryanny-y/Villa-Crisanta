@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Villa Crisanta 2</title>
 
   <!-- ICON -->
   <link rel="icon" href="images/vclogo.png" type="image/logo">
@@ -16,14 +16,445 @@
 
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+
 </head>
 <body class="bg-white-1">
 
+  <!-- LOADER -->
+  <div class="loader fixed top-0 left-0 w-full h-full bg-white-1 z-50 flex flex-col items-center justify-center gap-5 text-center">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+      <div class="custom-loader"></div>
+      <h1 class="text-4xl font-bold">Welcome to Villa Crisanta!</h1>
+    </div>
+    <p class="text-sm">Please waitt...</p>
+  </div>
 
+  <!-- HEADER -->
+  <header id="header" class="fixed bg-transparent right-0 left-0 top-0 py-2 z-40">
+    <div class="container">
+      <div class="header flex items-center justify-between text-white-1 gap-2">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/vclogo.png" alt="" class="h-10 sm:h-12">
+          <p class="font-semibold text-2xl sm:text-3xl md:text-4xl transition-all duration-300 hover:text-gold-1">Villa Crisanta Spring Resort</p>
+        </a>
 
+        <div class="hamburger-menu flex items-center text-white-1 text-xl md:hidden transition-all duration-300 hover:text-gold-1">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="header-nav fixed top-0 bottom-0 right-0 md:static flex flex-col md:flex-row md:items-center px-4 py-7 md:p-3 gap-5 font-semibold text-lg bg-black-1 md:bg-transparent">
+          <li class="x-mark text-2xl md:hidden text-end transition-all duration-300 hover:text-gold-1"><i class="fa-solid fa-xmark"></i></li>
+          <li><a href="#" class="transition-all duration-300 hover:text-gold-1">HOME</a></li>
+          <li><a href="#space-utilize" class="transition-all duration-300 hover:text-gold-1">ABOUT</a></li>
+          <li><a href="#contact-form" class="transition-all duration-300 hover:text-gold-1">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="flex flex-col gap-20 ">
+    <!-- HERO -->
+    <section id="hero-2" class="relative w-full" style="z-index: -1;">
+      <div class="container">
+        <div class="hero-section flex gap-5 flex-col items-center justify-center text-white-1 text-center w-full sm:w-4/5 mx-auto h-svh">
+          <p class="text-2xl font-semibold" style="margin-bottom: -20px;">Welcome to</p>
+          <h1 class="text-5xl md:text-7xl font-bold tracking-normal leading-none">Villa Crisanta 2 <br> Spring Resort</h1>
+          <p class="text-lg md:text-xl font-semibold">BEDROOMS | SWIMMING POOLS | CONFERENCE ROOM | BILIARDS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT SPACE UTILIZE -->
+    <section id="space-utilize">
+      <div class="container">
+        <div class="space-util flex flex-col gap-5 flex-wrap">
+          <div class="space-util-header flex flex-col md:flex-row md:items-center gap-2 md:gap-10 text-black-1">
+            <h2 class="font-semibold text-4xl md:text-5xl tracking-normal md:whitespace-nowrap">What space to utilize</h2>
+            <p class="border border-black-1 text-sm py-2 px-4 rounded-sm">Recommended up to 25 pax (4 rooms) Maximum up to 35 pax (5 rooms)</p>
+          </div>
+
+          <div class="flex gap-10 items-center justify-between flex-wrap">
+            <div class="flex flex-col items-center md:items-start p-5 border border-black-1 rounded-md basis-1/4 flex-grow">
+              <div class="icon flex mb-3 gap-7">
+                <img src="images/icons/bunk-bed.png" alt="" class="w-14 md:w-20 h-20">
+                <img src="images/icons/aircon.png" alt="" class="w-14 md:w-20 h-20">
+              </div>
+              <h6 class="font-semibold text-3xl whitespace-nowrap">8 Bedrooms</h6>
+              <p class="text-md">Bunk beds, Air-conditioned rooms</p>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start p-5 border border-black-1 rounded-md basis-1/4 flex-grow">
+              <div class="icon flex mb-3 gap-7">
+                <img src="images/icons/living-room.png" alt="" class="w-14 md:w-20 h-20">
+                <img src="images/icons/tv.png" alt="" class="w-14 md:w-20 h-20">
+              </div>
+              <h6 class="font-semibold text-3xl whitespace-nowrap">3 Living Rooms</h6>
+              <p class="text-md">Tv and Streaming Services (Netflix) available</p>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start p-5 border border-black-1 rounded-md basis-1/4 flex-grow">
+              <div class="icon flex mb-3 gap-7">
+                <img src="images/icons/kitchen.png" alt="" class="w-14 md:w-20 h-20">
+              </div>
+              <h6 class="font-semibold text-3xl whitespace-nowrap">3 Kitchens</h6>
+              <p class="text-md">Primary Kitchen and Dirty Kitchen</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms">
+      <div class="container">
+        <div class="rooms mx-auto w-4/5 relative text-center">
+          <h1 class="text-3xl sm:text-4xl font-semibold text-black-1 mb-8">ROOMS</h1>
+
+          <div class="swiper swiper-rooms h-96">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room1.jpg" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room2.jpg" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room3.jpg" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room4.jpg" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room5.webp" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room6.webp" alt="" class="w-full h-full"></div>
+              <div class="swiper-slide h-96"><img src="images/villa-2/rooms/room7.webp" alt="" class="w-full h-full"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-prev -left-6 z-10 top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-left transition-all duration-300 hover:text-gold-1"></i></div>
+            <div class="swiper-next -right-6 z-10 top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-right transition-all duration-300 hover:text-gold-1"></i></div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KITCHEN GALLERY -->
+    <section id="kitchen">
+      <div class="container">
+        <div class="kitchen w-3/4 mx-auto">
+          <div class="i1"><img src="images/villa-1/kitchen/kitchen1.jpg" alt="" ></div>
+          <div class="i2"><img src="images/villa-1/kitchen/kitchen2.jpg" alt="" ></div>
+          <div class="i3"><img src="images/villa-1/kitchen/kitchen3.jpg" alt="" ></div>
+          <div class="i4"><img src="images/villa-1/kitchen/kitchen4.jpg" alt="" ></div>
+          <div class="i5"><img src="images/villa-1/kitchen/kitchen5.jpg" alt="" ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section id="amenities">
+      <div class="container">
+        <div class="ameneties flex flex-col gap-5">
+          <h1 class="text-3xl sm:text-4xl font-semibold text-black-1 mb-5">WHAT THIS PLACE OFFERS</h1>
+          
+          <div class="amenities-wrapper grid grid-cols-2 md:grid-cols-4 gap-7 sm:gap-10 text-black w-full md:w-4/5 mx-auto">
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/wifi.png" alt="" class="h-10 w-10">
+              <p>WiFi</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+                <img src="images/icons/mountain.png" alt="" class="h-10 w-10">
+                <p>Mountain View</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+                <img src="images/icons/workspace.png" alt="" class="h-10 w-10">
+                <p>Dedicated Workspace</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+                <img src="images/icons/front-car.png" alt="" class="h-10 w-10">
+                <p>Parking Area</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+                <img src="images/icons/billiard-ball.png" alt="" class="h-10 w-10">
+                <p>Billiard table</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+                <img src="images/icons/paws.png" alt="" class="h-10 w-10">
+                <p>Pets Allowed</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/jacuzzi.png" alt="" class="h-10 w-10">
+              <p>Jacuzzi</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/spa.png" alt="" class="h-10 w-10">
+              <p>Spa and Massage</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/safe-box.png" alt="" class="h-10 w-10">
+              <p>Safety Box</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/powder-room.png" alt="" class="h-10 w-10">
+              <p>Powder Rooms</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/bar-counter.png" alt="" class="h-10 w-10">
+              <p>Bar Counter</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/chaise lounge.png" alt="" class="h-10 w-10">
+              <p>Chaise Lounges</p>
+            </div>
+            
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/waterfall.png" alt="" class="h-10 w-10">
+              <p>Waterfalls</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/pool-light.png" alt="" class="h-10 w-10">
+              <p>Underwater Lights</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/balcony.png" alt="" class="h-10 w-10">
+              <p>Balcony</p>
+            </div>
+            
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/terrace.png" alt="" class="h-10 w-10">
+              <p>Roofed Terrace</p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/lobby.png" alt="" class="h-10 w-10">
+              <p>2nd Floor Lobby </p>
+            </div>
+
+            <div class="flex gap-5 items-center">
+              <img src="images/icons/shower.png" alt="" class="h-10 w-10">
+              <p>Common Shower</p>
+            </div>
+            
+          </div>
+
+          <div class="amenities-img flex items-center justify-center gap-10 flex-wrap">
+            <img src="images/villa-1/gallery/amenities-1.jpg" alt="" class="h-68 p-5 shadow-md">
+            <img src="images/villa-1/gallery/amenities-2.jpg" alt="" class="h-68 lg:h-66 p-5 shadow-md">
+            <img src="images/villa-1/gallery/amenities-3.jpg" alt="" class="h-68 p-5 shadow-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section id="photo-gallery">
+      <div class="container">
+        <div class="photo-gallery">
+          <h1 class="text-3xl sm:text-4xl font-semibold text-black-1 mb-5 text-center">PHOTO GALLERY</h1>
+
+          <div class="image-container mt-3">
+            <div class="im1"><img src="images/villa-2/gallery/gallery-1.jpg" alt=""></div>
+            <div class="im2"><img src="images/villa-2/gallery/gallery-2.jpg" alt=""></div>
+            <div class="im3"><img src="images/villa-2/gallery/gallery-3.jpg" alt=""></div>
+            <div class="im4"><img src="images/villa-2/gallery/gallery-4.jpg" alt=""></div>
+            <div class="im5"><img src="images/villa-2/gallery/gallery-5.jpg" alt=""></div>
+            <div class="im6"><img src="images/villa-2/gallery/gallery-6.jpg" alt=""></div>
+            <div class="im7"><img src="images/villa-2/gallery/gallery-7.jpg" alt=""></div>
+            <div class="im8"><img src="images/villa-2/gallery/gallery-8.jpg" alt=""></div>
+            <div class="im9"><img src="images/villa-2/gallery/gallery-9.jpg" alt=""></div>
+            <div class="im10"><img src="images/villa-2/gallery/gallery-10.jpg" alt=""></div>
+            <div class="im11"><img src="images/villa-2/gallery/gallery-11.jpg" alt=""></div>
+            <div class="im12"><img src="images/villa-2/gallery/gallery-12.jpg" alt=""></div>
+            <div class="im13"><img src="images/villa-2/gallery/gallery-13.jpg" alt=""></div>
+            <div class="im14"><img src="images/villa-2/gallery/gallery-14.jpg" alt=""></div>
+            <div class="im15"><img src="images/villa-2/gallery/gallery-15.jpg" alt=""></div>
+            <div class="im15"><img src="images/villa-2/gallery/gallery-16.jpg" alt=""></div>
+            <div class="im16"><img src="images/villa-2/gallery/gallery-17.jpg" alt=""></div>
+            <div class="im18"><img src="images/villa-2/gallery/gallery-18.jpg" alt=""></div>
+            <div class="im19"><img src="images/villa-2/gallery/gallery-19.jpg" alt=""></div>
+            <div class="im20"><img src="images/villa-2/gallery/gallery-20.jpg" alt=""></div>
+            <div class="im21"><img src="images/villa-2/gallery/gallery-21.jpg" alt=""></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RATING -->
+    <section id="rates">
+      <div class="container">
+        <div class="rates">
+          <h1 class="text-3xl sm:text-4xl font-semibold text-black-1 mb-14 text-center">ACCOMMODATION RATES</h1>
+
+          <div class="rate-container flex justify-center text-black-1 text-center gap-14 lg:gap-5 flex-wrap">
+            <div class="rate relative p-8 pt-24 shadow-md rounded-md">
+              <div class="date absolute text-xl p-5 bg-black-1 font-semibold text-white left-10 right-10 rounded-md" style="top: -30px;">
+                <h1>FRIDAY - SUNDAY & HOLIDAYS</h1>
+              </div>
+  
+              <ul class="ratings flex flex-col gap-3 text-xl justify-center items-center">
+                <li>21 HOUR RATE (7 AM TO 4 PM): <br> <span class="text-2xl font-bold">₱25, 000</span></li>
+                <li class="text-lg">Note: ₱500/person for guest beyond 25</li>
+              </ul>
+            </div>
+
+            <div class="rate relative p-8 pt-24 shadow-md rounded-md">
+              <div class="date absolute text-xl p-5 bg-black-1 font-semibold text-white left-10 right-10 rounded-md" style="top: -30px;">
+                <h1>MONDAY TO <br> THURSDAY</h1>
+              </div>
+  
+              <ul class="ratings flex flex-col gap-3 text-xl justify-center items-center">
+                <li>DAY RATE (8 AM TO 5 PM): <br> <span class="text-2xl font-bold">₱10, 000</span></li>
+                <li>NIGHT RATE (7 PM TO 6 AM): <br> <span class="text-2xl font-bold">₱12, 000</span></li>
+                <li>EXTENDED STAY (7 PM TO 4 PM): <br> <span class="text-2xl font-bold">₱20, 000</span></li>
+                <li class="text-lg">Note: ₱500/person for guest beyond 25</li>
+              </ul>
+            </div>
+
+            <div class="rate relative p-8 pt-24 shadow-md rounded-md">
+              <div class="date absolute text-xl p-5 bg-black-1 font-semibold text-white left-10 right-10 rounded-md" style="top: -30px;">
+                <h1>PEAK <br> SEASONS</h1>
+              </div>
+  
+              <ul class="ratings flex flex-col gap-3 text-xl justify-center items-center">
+                <li>21 HOUR RATE (7 AM TO 4 PM): <br> <span class="text-2xl font-bold">₱25, 000 <br><span class="text-lg sm:text-xl font-semibold">FOR 25 PAX (3 ROOMS)</span> </span></li>
+                <li class="text-lg">Note: ₱500/person for guest beyond 25</li>
+              </ul>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT AND BOOKING -->
+    <section id="contact-form" class="bg-black-1">
+      <div class="container">
+        <div class="contact-form text-white-1 py-10 flex flex-col-reverse md:flex-row gap-10">
+          <div class="contact-wrapper flex flex-col gap-7 basis-1/2">
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-semibold mb-3">CONTACT</h1>
+              <ul class="text-xl ml-4 flex flex-col gap-2">
+                <li>Ms. Jema Abad <br> 09087969200</li>
+                <li>Ms. Jennelyn Dumalaog <br> 09513979755</li>
+                <li>Mr. Pablio Labrador <br> 09508394289</li>
+              </ul>
+            </div>
+
+            <div>
+              <h1 class="text-2xl sm:text-3xl font-semibold mb-3">SOCIALS</h1>
+              <ul class="text-xl ml-4 flex flex-col gap-2">
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fas fa-envelope"></i> villacrisantalaguna@gmail.com</a>
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="" class="transition-all duration-300 hover:text-gold-1 whitespace-nowrap"><i class="fa-brands fa-instagram"></i> @villacrisantalaguna</a>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="g-form grow relative">
+            <h3 class="text-2xl sm:text-3xl font-semibold mb-3">BOOK NOW!</h3>
+
+            <!-- <div class="absolute top-0 right-0">
+              <button class="logout-btn text-white-1 py-2 px-5 bg-gold flex items-center text-lg rounded-sm">Logout</button>
+            </div> -->
+
+            <div class="book-container w-full text-black-1 relative">
+              <div class="sign-in-btn bg-white-1 absolute top-0 bottom-0 left-0 right-0 flex flex-col gap-2 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.8);">
+                <div class="indicator text-lg font-semibold bg-black-1 text-center rounded-md py-2 px-5 text-white-1">Not Signed In <br> <span class="text-sm">Please sign in to fill up the form</span></div>
+                <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
+              </div>
+
+              <form action="https://script.google.com/macros/s/AKfycbx0xHpEvf2Jz2kkir4rYYvJEtf2NTd-H9F6eUhaxadsFcecTgdUVjwsGNGpb5D3E0IjEg/exec" class="book-form w-full flex flex-col gap-5" id="form">
+                <select name="selected-villa" id="" class="px-4 py-2 outline-none" required>
+                  <option value="" disabled selected>Select Villa</option>
+                  <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
+                  <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
+                </select>
+
+                <label for="full-name">
+                  <input class="px-4 py-2 w-full outline-none" type="text" name="full-name" id="full-name" required placeholder="Your Name">
+                </label>
+                
+                <label for="address">
+                  <input class="px-4 py-2 w-full outline-none" type="text" name="address" id="address" required placeholder="Permanent Address">
+                </label>
+
+                <div class="contact-num flex flex-col sm:flex-row gap-3">
+                  <label for="contact-number" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="contact-number" id="contact-number" required placeholder="Contact No#:">
+                  </label>
+                  <label for="alter-number" class="flex-1">
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="alter-number" id="alter-number" required placeholder="Alternative Contact No#:">
+                  </label>
+                </div>
+
+                <div class="date-guest flex flex-col sm:flex-row gap-3">
+                  <label for="date-of-event" class="flex-1">
+                    <span class="text-white">Date of Event</span>
+                    <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
+                  </label>
+
+                  <label for="number-of-guest" class="flex-1">
+                    <span class="text-white">Number of Guests</span>
+                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests (3 yrs. old and above)">
+                  </label>
+                </div>
+
+                <div class="time-rooms flex flex-col sm:flex-row gap-3">
+                  <label for="time-in" class="flex-1">
+                    <span class="text-white">Time In</span>
+                    <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">
+                  </label>
+
+                  <label for="rooms" class="flex-1">
+                    <span class="text-white">Number of Rooms:</span>
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms (1 - 8)" min="1" max="8">
+                  </label>
+                </div>
+
+                <button type="submit" class="py-2 px-5 bg-gold-1 text-white-1 outline-none border-none text-lg font-semibold" id="submit-button">Submit</button>
+              </form>
+              <div id="message"
+                style="
+                display: none;
+                margin: 20px;
+                font-weight: bold;
+                color: green;
+                padding: 8px;
+                background-color: beige;
+                border-radius: 4px;
+                border-color: aquamarine;
+              "
+            ></div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="flex items-center justify-between font-lg text-white-1 bg-black-1 p-3 flex-wrap text-center">
+    <p class="w-full">Copyright © 2023 Villa Crisanta Spring Resort - All Rights Reserved.</p>
+    <p class="w-full">Powered by GABO</p>
+  </footer>
 
   <!-- SWIPER -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
+
+  <!-- JQUERY CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- JAVASCRIPT -->
+  <script type="module" src="/scripts/villa2.js"></script>
 </body>
 </html>

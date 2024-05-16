@@ -8,9 +8,11 @@ export function oauthSignIn() {
   form.setAttribute('method', 'GET'); // Send as a GET request.
   form.setAttribute('action', oauth2Endpoint);
 
+  let uri = document.title === 'Villa Crisanta 1' ? 'http://127.0.0.1:5500/villa-1.html' : 'http://127.0.0.1:5500/villa-2.html'
+
   // Parameters to pass to OAuth 2.0 endpoint.
   var params = {'client_id': '13411952836-3tpdg6hfrbpr3qgspqgo8kf6t9vjak1r.apps.googleusercontent.com',
-                'redirect_uri': 'https://villacrisanta-111.netlify.app/villa-1.html',
+                'redirect_uri': uri,
                 'response_type': 'token',
                 'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
                 'include_granted_scopes': 'true',
@@ -30,7 +32,7 @@ export function oauthSignIn() {
   form.submit();
 }
 
-export function handleRequest(signInBtn) {
+export function handleRequest(signInBtn, uriString) {
   let params = {};
 
   let regex = /[?&]+([^=&]+)=([^&]*)/g; // Updated regex pattern
@@ -45,13 +47,15 @@ export function handleRequest(signInBtn) {
       localStorage.setItem('authInfo', JSON.stringify(params));
   }
 
-  window.history.pushState({}, document.title, '/' + 'villa-1.html');
+  let uri = uriString === 'villa-1' ? 'villa-1.html' : 'villa-2.html';
+
+  window.history.pushState({}, document.title, '/' + uri);
 
   let info = JSON.parse(localStorage.getItem('authInfo'));
 
   if (info && info['access_token']) {
     signInBtn.parentElement.classList.add('hidden');
-
+    signInBtn.parentElement.classList.remove('flex');
     if(innerWidth > 768) {
       setTimeout(() => {
         window.scrollTo(0, document.body.scrollHeight - 200);

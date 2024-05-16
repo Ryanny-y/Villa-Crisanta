@@ -55,7 +55,7 @@
 
   <main id="main" class="flex flex-col gap-20 ">
     <!-- HERO -->
-    <section id="hero" class="relative w-full" style="z-index: -1;">
+    <section id="hero-1" class="relative w-full" style="z-index: -1;">
       <div class="container">
         <div class="hero-section flex gap-5 flex-col items-center justify-center text-white-1 text-center w-full sm:w-4/5 mx-auto h-svh">
           <p class="text-2xl font-semibold" style="margin-bottom: -20px;">Welcome to</p>
@@ -69,11 +69,10 @@
     <section class="video">
       <div class="container">
         <div class="video bg-transparent" style="height: 600px;">
-          <!-- <video src="images/villa-1/villa-1.mp4" class="w-full h-full" controls autoplay></video> -->
+          <video src="images/villa-1/villa-1.mp4" class="w-full h-full" controls autoplay></video>
         </div>
       </div>
     </section>
-
 
     <!-- WHAT SPACE UTILIZE -->
     <section id="space-utilize">
@@ -139,8 +138,8 @@
               <div class="swiper-slide h-96"><img src="images/villa-1/rooms/room11.jpg" alt="" class="w-full h-full"></div>
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-prev -left-6 z-10 top-40 sm:top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-left transition-all duration-300 hover:text-gold-1"></i></div>
-            <div class="swiper-next -right-6 z-10 top-40 sm:top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-right transition-all duration-300 hover:text-gold-1"></i></div>
+            <div class="swiper-prev -left-6 z-10 top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-left transition-all duration-300 hover:text-gold-1"></i></div>
+            <div class="swiper-next -right-6 z-10 top-1/2 text-center flex items-center justify-center"><i class="fa-solid fa-chevron-right transition-all duration-300 hover:text-gold-1"></i></div>
           
           </div>
         </div>
@@ -370,8 +369,8 @@
             </div> -->
 
             <div class="book-container w-full text-black-1 relative">
-              <div class="sign-in-btn bg-white-1 absolute top-0 bottom-0 left-0 right-0 flex flex-col gap-2 items-center justify-center" style="background-color: rgba(255, 255, 255, 0.8);">
-                <div class="indicator text-lg font-semibold bg-black-1 text-center rounded-md py-2 px-5 text-white-1"></div>
+              <div class="sign-in-btn bg-white-1 absolute top-0 bottom-0 left-0 right-0 flex flex-col gap-2 items-center justify-center " style="background-color: rgba(255, 255, 255, 0.8);">
+                <div class="indicator text-lg font-semibold bg-black-1 text-center rounded-md py-2 px-5 text-white-1">Not Signed In <br> <span class="text-sm">Please sign in to fill up the form</span></div>
                 <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
               </div>
 
@@ -390,7 +389,7 @@
                   <input class="px-4 py-2 w-full outline-none" type="text" name="address" id="address" required placeholder="Permanent Address">
                 </label>
 
-                <div class="contact-num flex gap-3">
+                <div class="contact-num flex flex-col sm:flex-row gap-3">
                   <label for="contact-number" class="flex-1">
                     <input class="px-4 py-2 w-full outline-none" type="number" name="contact-number" id="contact-number" required placeholder="Contact No#:">
                   </label>
@@ -399,7 +398,7 @@
                   </label>
                 </div>
 
-                <div class="date-guest flex gap-3">
+                <div class="date-guest flex flex-col sm:flex-row gap-3">
                   <label for="date-of-event" class="flex-1">
                     <span class="text-white">Date of Event</span>
                     <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
@@ -411,7 +410,7 @@
                   </label>
                 </div>
 
-                <div class="time-rooms flex gap-3">
+                <div class="time-rooms flex flex-col sm:flex-row gap-3">
                   <label for="time-in" class="flex-1">
                     <span class="text-white">Time In</span>
                     <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">

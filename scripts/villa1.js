@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
   // const logoutBtn = document.querySelector('.logout-btn');
   // logoutBtn.addEventListener('click', logout);
   
-  handleRequest(signInBtn);
+  handleRequest(signInBtn, 'villa-1');
 
   function logout() {
     // Clear OAuth information from localStorage
