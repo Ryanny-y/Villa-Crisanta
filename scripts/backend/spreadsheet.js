@@ -15,7 +15,7 @@ export function villaSpreadSheet(e) {
 
   // Send a POST request to your Google Apps Script
   fetch(
-    "https://script.google.com/macros/s/AKfycbx0xHpEvf2Jz2kkir4rYYvJEtf2NTd-H9F6eUhaxadsFcecTgdUVjwsGNGpb5D3E0IjEg/exec",
+    "https://script.google.com/macros/s/AKfycbwMgxeMq2Sj62g-cf1VWhOy_ywLcYdy687eDOu61gFkAV_f_seRK6GYAjzw3jofVpDp9w/exec",
     {
       redirect: "follow",
       method: "POST",
