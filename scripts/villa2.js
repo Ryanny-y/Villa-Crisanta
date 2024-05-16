@@ -2,6 +2,7 @@ import { hamburger, headerBgTransition } from "./utils/handleTransitions.js";
 import { roomsSwiper } from './utils/swiper.js';
 import { handleRequest, oauthSignIn } from "./backend/sign-in.js";
 import { villaSpreadSheet } from "./backend/spreadsheet.js";
+import { termsAndCondition } from "./utils/terms-condition.js";
 
 window.addEventListener("load", () => {
   setTimeout(() => {
@@ -17,10 +18,11 @@ window.addEventListener("load", () => {
   // FORSIGN IN
   const signInBtn = document.querySelector('.sign-inbtn');
   signInBtn.addEventListener('click', oauthSignIn);
-  // const logoutBtn = document.querySelector('.logout-btn');
-  // logoutBtn.addEventListener('click', logout);
   
   handleRequest(signInBtn, 'villa-2');
+
+  // Terms and Conditions
+  termsAndCondition();
 
   function logout() {
     // Clear OAuth information from localStorage

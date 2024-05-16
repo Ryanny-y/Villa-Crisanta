@@ -341,7 +341,7 @@
     <section id="contact-form" class="bg-black-1">
       <div class="container">
         <div class="contact-form text-white-1 py-10 flex flex-col-reverse md:flex-row gap-10">
-          <div class="contact-wrapper flex flex-col gap-7 basis-1/2">
+          <div class="contact-wrapper flex flex-col gap-7 basis-1/2 shrink-0">
             <div>
               <h1 class="text-2xl sm:text-3xl font-semibold mb-3">CONTACT</h1>
               <ul class="text-xl ml-4 flex flex-col gap-2">
@@ -375,57 +375,118 @@
                 <button class="sign-inbtn text-white-1 py-2 px-5 bg-black-1 flex items-center gap-2 text-lg rounded-sm" style="opacity: 1;"><img src="images/icons/google-logo.png" alt="" class="h-5 w-5"> Sign in with Google</button>
               </div>
 
-              <!-- <div class="terms-condition"></div> -->
+               <!-- TERMS AND CONDITIONS -->
+               <div class="terms-and-conditions text-white-1 h-96 overflow-y-scroll text-justify">
+                <p class="font-semibold text-lg">Terms & Conditions / House Rules & Regulations</p>
+                <p class="mb-4 text-sm">The management appreciates your cooperation in adhering to these rules and regulations to ensure a peaceful and safe stay for all our valued guests, providing a clean and friendly resort experience.</p>
 
-              <form action="https://script.google.com/macros/s/AKfycbwMgxeMq2Sj62g-cf1VWhOy_ywLcYdy687eDOu61gFkAV_f_seRK6GYAjzw3jofVpDp9w/exec" class="book-form w-full flex flex-col gap-5 overflow-auto" id="form">
+                <ol class="list-decimal px-5 text-sm">
+                  <li>A prepayment is required to secure your reservation and is non-refundable. Non-appearance on the schedule will be forfeited; however, it may be used to rebook for a future date if a guest fails to show up due to unforeseen events like typhoons. In case of changing schedules, rebooking must be made a minimum of 14 days prior to the event. The reservation is accepted and confirmed only for the number of guests declared on the original inquiry. Villa Crisanta will then charge P500.00 per head in excess of the number of guests stated above. The maximum capacity in Villa Crisanta 1 is 70 persons, including 3 years old.</li>
+                  <li>There are no refunds for early checkouts.</li>
+                  <li>Management is not liable for any incident/accident that might happen while occupying the resort.</li>
+                  <li>Vandalism, stickers, posters, tarpaulins using scotch tape, glue plaster, and other materials that may damage the paint of the facilities are strictly prohibited.</li>
+                  <li>Do not leave your personal belongings unattended. The management is not liable for any loss or damages.</li>
+                  <li>Loss of room keys is subject to an extra charge of P100.00.</li>
+                  <li>Electric irons and other similar devices, which are not part of the resort's equipment, are not allowed to be used inside the rooms due to fire safety.</li>
+                  <li>PETS ARE ALLOWED.
+                      <ul>
+                          <li>Only dogs or cats are allowed as pets.</li>
+                          <li>A maximum of 2 pets is permitted.</li>
+                          <li>Pet owners should provide a vaccination record. All pet vaccinations, especially anti-rabies, must be current and valid. Disposable bags, pee pads, and diapers should be provided.</li>
+                          <li>All pets must be cleaned, well-groomed, completely free of fleas and ticks, and must wear a diaper at all times.</li>
+                          <li>Keep your pet leashed at all times.</li>
+                          <li>Any damage to the resort caused by the pet will be charged to the guest.</li>
+                      </ul>
+                  </li>
+                  <li>Illegal drugs are strictly prohibited.</li>
+                  <li>We strictly prohibit smoking inside the premises. For safety and to assure that our facilities are not exposed to items that create odor which is unhealthy to our guest.</li>
+                  <li>Guests are not allowed to access the owner's linen closet and cabinet which contains cleaning supplies and chemicals that could be hazardous to children and adults' health.</li>
+                  <li>The property has a fire extinguisher installed near the kitchen area or on every designated floor. It was fully charged at the last inspection. Guests are allowed to use the fire extinguisher only for true emergencies.</li>
+                  <li>Guests must throw trash in the provided garbage bin.</li>
+                  <li>Guests must not let kitchen scraps or leftover food slip down the drain to avoid clogging. A strainer is provided to help prevent clogs.</li>
+                  <li>Guests must refrain from throwing tissue paper, napkins, panty liners, and other unwanted objects into the toilet bowl to avoid clogging. Please show respect to the next user and keep the toilet clean after use.</li>
+                  <li>Do not feed the fish at the pond at the main entrance.</li>
+                  <li>Conference room - Guests must be dried off upon entering the conference room. Keep this room as dry as possible to prevent electrical accidents. This room is to be used for meetings and conferences only. If it is used, there is a corresponding charge of P200.00 per hour.</li>
+                  <li>Time extension is subject to approval and can be allowed only if the next slot is available. A surcharge of P1000.00 per hour will be paid for approved extensions.</li>
+                  <li>The housekeeper will conduct an inspection of the premises 30 minutes before the checkout time to ensure that the facilities are complete and in good condition upon checkout. Once the checklist is cleared, the guest may vacate the resort.</li>
+                  <li>Any misuse resulting in loss or damage to our facilities, decor, and equipment that may occur during the rental period will be charged to the guest.</li>
+                  <li>In case of default in payment of dues by a guest, the management shall have a lien on their luggage and belongings, and be entitled to detain the same and to sell or auction such property at any time without reference to the guest. The net sale proceeds will be appropriated towards the amount due by the guest, without prejudice to the management's rights to adopt such further recovery proceedings as may be required.</li>
+                  <li>We strongly recommend showering before using the pool for hygienic purposes.</li>
+                  <li>No lifeguard on duty. All persons using the swimming pools do so at their own risk. However, a first-aid kit is provided in case of injury.</li>
+                  <li>It is the guest's responsibility to learn about safety precautions, warning signs of water conditions, and safety procedures concerning swimming in or being around the pool/jacuzzi.</li>
+                  <li>No diving, running, dunking, or rough play in the pool area. Kids must be accompanied by an adult while swimming.</li>
+                  <li>Food and drinks are not allowed in the swimming pool area.</li>
+                </ol>
+                
+                <label for="agree" class="text-sm flex items-center gap-3 mt-3 pr-5">
+                  <input type="checkbox" name="agree" id="agree" class="w-10 h-10 accent-gold-1 text-white-1" required>
+                  <span>
+                    I hereby assume all the risk that may arise from negligence or incidental/accidental occurrences of any kind during our stay at the resort. I, on behalf of my companions, agree to forever discharge, waive, and release VILLA CRISANTA, its owners, and housekeepers from any and all claims, demands, injuries, damages, and liabilities. I have carefully read this rental agreement, terms, and conditions in its entirety and understand its content, and I sign it voluntarily.
+                  </span>
+                </label>
+                <div class="text-red-500 tex-xs agreed-text"></div>
 
-                <select name="selected-villa" id="" class="px-4 py-2 outline-none" required>
-                  <option value="" disabled selected>Select Villa</option>
-                  <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
-                  <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
-                </select>
+                <button class="bg-gold-1 text-white outline-none border-none hover:bg-white-1 hover:text-gold-1 transition-all duration-300 text-lg py-1 px-8 rounded-sm mt-3 next-btn">Next</button>
+              </div>
 
+              <!-- FORM -->
+              <form action="https://script.google.com/macros/s/AKfycbwMgxeMq2Sj62g-cf1VWhOy_ywLcYdy687eDOu61gFkAV_f_seRK6GYAjzw3jofVpDp9w/exec" class="book-form w-full hidden flex-col gap-5 h-96 overflow-y-scroll pr-2" id="form">
+
+                <label for="choose-villa flex flex-col gap-5">
+                  <span class="text-white-1 block">Choose a Villa</span>
+                  <select name="selected-villa" id="choose-villa" class="px-4 py-2 outline-none block w-full" required>
+                    <option value="" disabled selected>Select Villa</option>
+                    <option value="Villa-1" class="px-4 py-2">Villa Crisanta 1</option>
+                    <option value="Villa-2" class="px-4 py-2">Villa Crisanta 2</option>
+                  </select>
+                </label>
+                
                 <label for="full-name">
+                  <span class="text-white-1">Full Name</span>
                   <input class="px-4 py-2 w-full outline-none" type="text" name="full-name" id="full-name" required placeholder="Your Name">
                 </label>
                 
                 <label for="address">
+                  <span class="text-white-1">Address</span>
                   <input class="px-4 py-2 w-full outline-none" type="text" name="address" id="address" required placeholder="Permanent Address">
                 </label>
 
                 <label for="email-address">
-                  <input class="px-4 py-2 w-full outline-none" type="text" name="email-address" id="email-address" required placeholder="Email Address">
+                  <span class="text-white-1">Email Address</span>
+                  <input class="px-4 py-2 w-full outline-none" type="email" name="email-address" id="email-address" required placeholder="Email Address">
                 </label>
 
                 <div class="contact-num flex flex-col sm:flex-row gap-3">
                   <label for="contact-number" class="flex-1">
+                    <span class="text-white-1">Contact Number</span>
                     <input class="px-4 py-2 w-full outline-none" type="number" name="contact-number" id="contact-number" required placeholder="Contact No#:">
                   </label>
                   <label for="alter-number" class="flex-1">
-                    <input class="px-4 py-2 w-full outline-none" type="number" name="alter-number" id="alter-number" required placeholder="Alternative Contact No#:">
+                    <span class="text-white-1">Alternative Number</span>
+                    <input class="px-4 py-2 w-full outline-none" type="number" name="alter-number" id="alter-number" placeholder="Alt. Contact No#:">
                   </label>
                 </div>
 
                 <div class="date-guest flex flex-col sm:flex-row gap-3">
                   <label for="date-of-event" class="flex-1">
-                    <span class="text-white">Date of Event</span>
+                    <span class="text-white-1">Date of Event</span>
                     <input class="px-4 py-2 w-full outline-none grow" type="date" name="date-of-event" id="date-of-event" required placeholder="Date of Event">
                   </label>
 
                   <label for="number-of-guest" class="flex-1">
-                    <span class="text-white">Number of Guests</span>
-                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="Number of Guests (3 yrs. old and above)">
+                    <span class="text-white-1">Numbers of Guests</span>
+                    <input class="px-4 py-2 w-full outline-none grow" type="number" name="number-of-guest" id="number-of-guest" required placeholder="(3 yrs. old and above)">
                   </label>
                 </div>
 
                 <div class="time-rooms flex flex-col sm:flex-row gap-3">
                   <label for="time-in" class="flex-1">
-                    <span class="text-white">Time In</span>
+                    <span class="text-white-1">Time In</span>
                     <input class="px-4 py-2 w-full outline-none" type="time" name="time-in" id="time-in" required placeholder="Time in">
                   </label>
 
                   <label for="rooms" class="flex-1">
-                    <span class="text-white">Number of Rooms:</span>
+                    <span class="text-white-1">Number of Rooms (1 - 8):</span>
                     <input class="px-4 py-2 w-full outline-none" type="number" name="rooms" id="rooms" required placeholder="Number of Rooms (1 - 8)" min="1" max="8">
                   </label>
                 </div>

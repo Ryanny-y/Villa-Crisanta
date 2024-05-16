@@ -8,7 +8,7 @@ export function oauthSignIn() {
   form.setAttribute('method', 'GET'); // Send as a GET request.
   form.setAttribute('action', oauth2Endpoint);
 
-  let uri = document.title === 'Villa Crisanta 1' ? 'https://villacrisanta-111.netlify.app/villa-1.html' : 'https://villacrisanta-111.netlify.app/villa-1.html'
+  let uri = document.title === 'Villa Crisanta 1' ? 'https://villacrisanta-111.netlify.app/villa-1.html' : 'https://villacrisanta-111.netlify.app/villa-2.html'
 
   // Parameters to pass to OAuth 2.0 endpoint.
   var params = {'client_id': '13411952836-3tpdg6hfrbpr3qgspqgo8kf6t9vjak1r.apps.googleusercontent.com',
@@ -55,14 +55,9 @@ export function handleRequest(signInBtn, uriString) {
 
   if (info && info['access_token']) {
     signInBtn.parentElement.style.display = 'none';
-    if(innerWidth > 768) {
-      setTimeout(() => {
-        window.scrollTo(0, document.body.scrollHeight - 200);
-      }, 1000)
-    } else {
-      setTimeout(() => {
-        window.scrollTo(0, document.body.scrollHeight - 1100);
-      }, 1000)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     
   } else {
