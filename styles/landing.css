@@ -9,7 +9,7 @@
 }
 
 body {
-  min-height: 100svh;
+  /* min-height: 100svh; */
   line-height: 1.5;
   font-family: 'TT Commons', sans-serif;
 }
@@ -131,7 +131,7 @@ input, button, textarea, select {
   filter: brightness(70%);
   z-index: -10;
   top: 0;
-  height: 100vh;
+  height: 90vh;
   left: 0;
   right: 0;
 }
