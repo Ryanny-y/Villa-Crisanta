@@ -54,8 +54,7 @@ export function handleRequest(signInBtn, uriString) {
   let info = JSON.parse(localStorage.getItem('authInfo'));
 
   if (info && info['access_token']) {
-    signInBtn.parentElement.classList.add('hidden');
-    signInBtn.parentElement.classList.remove('flex');
+    signInBtn.parentElement.style.display = 'none';
     if(innerWidth > 768) {
       setTimeout(() => {
         window.scrollTo(0, document.body.scrollHeight - 200);

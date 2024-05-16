@@ -92,6 +92,26 @@ input, button, textarea, select {
   }
 }
 
+.book-now-btn {
+  animation: scalebtn 2s infinite;
+  outline: 2px solid #DD9603;
+  outline-offset: 5px;
+  transition: .3s;
+}
+
+@keyframes scalebtn{
+  0% {
+      transform: scale(.9);
+  }
+  50% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(.9);
+  }
+}
+
+
 /* HEADER NAV */
 .header-nav {
   left: 100%;
