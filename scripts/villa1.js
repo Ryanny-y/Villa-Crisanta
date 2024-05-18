@@ -7,7 +7,7 @@ import { termsAndCondition } from "./utils/terms-condition.js";
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.querySelector(".loader").style.display = "none";
-  }, 3000);
+  }, 5000);
 
   // window event
   window.addEventListener('scroll', headerBgTransition);

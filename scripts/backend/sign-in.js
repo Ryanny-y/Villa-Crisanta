@@ -8,7 +8,7 @@ export function oauthSignIn() {
   form.setAttribute('method', 'GET'); // Send as a GET request.
   form.setAttribute('action', oauth2Endpoint);
 
-  let uri = document.title === 'Villa Crisanta 1 Spring Resort' ? 'https://villa-crisanta.com/villa-1' : 'https://villacrisanta-111.netlify.app/villa-2.html'
+  let uri = document.title === 'Villa Crisanta 1 Spring Resort' ? 'https://villa-crisanta.com/villa-1' : 'https://villa-crisanta.com/villa-2'
 
   // Parameters to pass to OAuth 2.0 endpoint.
   var params = {'client_id': '13411952836-3tpdg6hfrbpr3qgspqgo8kf6t9vjak1r.apps.googleusercontent.com',
