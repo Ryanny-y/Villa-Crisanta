@@ -821,20 +821,12 @@ video {
   width: 1.25rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-80 {
+  width: 20rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .flex-1 {
